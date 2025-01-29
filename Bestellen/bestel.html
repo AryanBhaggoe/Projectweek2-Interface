@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Bestelling</title>
+    <link rel="stylesheet" href="bestel.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="/start/start.html"><button>Home</button></a></li>
+
+            <li class="dropdown">
+                <button>Schilderijen</button>
+                <ul class="dropdown-menu">
+                    <li><a href="/schilderij/schilderij.html">Schilderijen</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <button>Plannen</button>
+                <ul class="dropdown-menu">
+                    <li><a href="/adresgegevens/Adres.html">Adresgegevens</a></li>
+                    <li><a href="/Openingstijden/opeinstijden.html">Openingstijden</a></li>
+                    <li><a href="/ov/ov.html">Openbaar Vervoer</a></li>
+                    <li><a href="/Bestellen/bestel.html">Bestelpagina</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    <h2>Bestel je tickets</h2>
+    <form class="kader">
+        
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" required minlength="2" maxlength="30"><br><br>
+
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" required minlength="2" maxlength="30"><br><br>
+
+        
+        <label for="leeftijd">Leeftijd:</label>
+        <input type="number" id="leeftijd" name="leeftijd" min="1" max="120" required><br><br>
+
+ 
+        <label for="kortingkaart">Kortingkaart:</label><br>
+        <input type="checkbox" id="student" name="kortingkaart" value="student">
+        <label for="student">Studentenkaart</label><br>
+        <input type="checkbox" id="65plus" name="kortingkaart" value="65plus">
+        <label for="65plus">65+ Pas</label><br>
+        <input type="checkbox" id="ledenpas" name="kortingkaart" value="ledenpas">
+        <label for="ledenpas">Ledenpas</label><br><br>
+
+   
+        <label for="aantalkaarten">Aantal kaarten:</label>
+        <select id="aantalkaarten" name="aantalkaarten" required>
+            <option value="">Selecteer aantal</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+     
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Bestellen</button>
+    </form>
+</body>
+</html>
