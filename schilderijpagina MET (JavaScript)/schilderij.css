@@ -1,0 +1,173 @@
+/* Algemene body-stijlen */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Mooier lettertype */
+    text-align: center;
+    background: linear-gradient(to right, #3b82c4, #a5b8c6); /* Aangename kleurovergang als achtergrond */
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+}
+ 
+/* Navigatiebalk met mooie hover-effecten */
+nav {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparant */
+    padding: 220px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Blur effect op de achtergrond */
+    background-color: white;
+    padding: 20px 0; /* Verlaag de verticale padding voor een strakkere look */
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+nav button {
+    background: #333;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px; /* Rondere knoppen voor een zachtere uitstraling */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+/* Hover effect voor knoppen */
+nav button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Knoppen worden groter bij hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Schaduw op hover voor diepte */
+}
+ 
+/* Afbeeldingen Grid met aangepaste layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexibele kolommen */
+    gap: 20px;
+    padding: 20px;
+    margin: 40px 20px;
+    max-width: 1200px; /* Max breedte van de grid */
+    width: 100%;
+}
+ 
+/* Vierkante afbeeldingen met tilt-effect en mooie schaduw */
+.square {
+    width: 100%;
+    height: 250px;
+    background-color: #ff5733;
+    border-radius: 20px; /* Rondere hoeken */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Schaduw voor diepte */
+    transform: rotate(-8deg); /* Tilt-effect voor dynamische uitstraling */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+ 
+/* Hover-effect voor vierkanten */
+.square:hover {
+    transform: rotate(0deg) scale(1.1); /* De vierkant komt recht en vergroot */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Dieper schaduw bij hover */
+    filter: brightness(1.2); /* Helderder maken bij hover */
+}
+ 
+/* Cirkelvormige afbeeldingen met schaduw en vergroting */
+.circle {
+    width: 100%;
+    height: 250px;
+    background-color: #33c3ff;
+    border-radius: 50%; /* Maak de afbeeldingen cirkelvormig */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Schaduw voor diepte */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.3s ease;
+}
+ 
+/* Hover-effect voor cirkels */
+.circle:hover {
+    transform: scale(1.1); /* Vergroot de cirkel bij hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sterkere schaduw bij hover */
+    filter: brightness(1.3); /* Vergroot de helderheid bij hover */
+}
+ 
+ 
+nav {
+    background-color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+nav button {
+    background: #333;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+nav button:active {
+    transform: scale(0.98);
+}
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

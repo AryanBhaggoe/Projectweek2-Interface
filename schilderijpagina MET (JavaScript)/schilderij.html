@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picasso Gallery</title>
+    <link rel="stylesheet" href="schilderij.css">
+    <script defer src="schilderij.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="/start/start.html"><button>Home</button></a></li>
+            <li class="dropdown">
+                <button>Schilderijen</button>
+                <ul class="dropdown-menu">
+                    <li><a href="/schilderij/schilderij.html">Schilderijen</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button>Plannen</button>
+                <ul class="dropdown-menu">
+                    <li><a href="/adresgegevens/Adres.html">Adresgegevens</a></li>
+                    <li><a href="/Openingstijden/opeinstijden.html">Openingstijden</a></li>
+                    <li><a href="/ov/ov.html">Openbaar Vervoer</a></li>
+                    <li><a href="/Bestellen/bestel.html">Bestelpagina</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="image-grid" id="gallery-container"> 
+        
+    </div>
+
+    <h1>Afbeeldingspad is Schilderijen (Foto's)</h1>
+    
+    <!--  Dit is het formulier om schilderijen toe te voegen -->
+    <div class="form-container">
+        <input type="text" id="painting-name" placeholder="Naam schilderij">
+        <input type="text" id="painting-image" placeholder="Afbeeldingspad (bijv. /Schilderijen/nieuw-schilderij.jpg)">
+        <button onclick="addPainting()">Toevoegen</button>
+    </div>
+
+</body>
+</html>
